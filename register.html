@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/register.css">
+    <script src="script/mysricpt1.js"></script>
+</head>
+
+<body> 
+
+	
+	<header>	
+		<a class="logo-wed" href="#"><img alt="The Fashion Store" src="images/main/logo7.jpg" style="width:400px;"></a> 
+		<nav class="t-nav">
+		<div class="navbar">
+		<ul class="menu-bar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="planning.html">Stock</a></li>
+			<li><a href="testimonials.html">Testimonials</a></li>
+		    <li><a href="product-photo.html">Shop</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+  <li><a href="login.html" class="on-top">Login</a></li>
+  
+  
+		</ul>
+		</div> 
+		<a href="checkout-cart.html">
+		<img class="log-bag" src="images/main/bag.png"></a>
+		</nav>
+	</header>
+	<!--HEADER END-->
+	
+	<section id="main-sec">
+	<div class="o-container">
+	
+	<form onsubmit='return checkPassword()' action="register.php" method="POST">
+	
+	<h2 style="font-size:30px; text-align:center; color:black;" >Your Fashion Store Registration Here!.</h2><br>
+   
+    <input type="text" placeholder="Email" name="email" required>
+    <input type="password" placeholder="Password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" 
+title="Must contain at least one digit,one uppercase character,one lowercase character and at least 10 characters" required>
+    <input type="password" placeholder="Repeat Password" name="pswrepeat" id="pswrepeat" required>
+    
+    <p style="font-size:11px; text-align:center;"><br>By signing up, you agree to our Terms and Privacy Policy.</p><br>
+
+    <button class="sign-button" type="POST">Sign Up</button>
+	
+	<p style="font-size:11px; text-align:center;">Already a member? <a href="Login.html">Log In</a></p>
+	
+	</form>
+	
+	</div>
+	</section>
+	
+	<!--FOOTER START-->
+	
+	<footer class="f-con">
+
+	<div class="f-text">
+	
+	
+	
+	<p style="font-size: 14px;">Privacy Policy</p>
+	<p style="font-size: 11px;">Created By: SLIIT Group MAT_PG.01.02_04</p>
+	
+	</div>
+	
+	<div class="social">
+	<a style="padding-left:30px;" href="http://www.instagram.com" target="_blank"><img class="ig" src ="images/social/ig.png"></img></a>
+	<a style="padding-left:30px;" href="http://www.facebook.com" target="_blank"><img class="fb" src ="images/social/fb.png"></img></a>
+	<a style="padding-left:30px;" href="http://www.twitter.com" target="_blank"><img class="tw" src ="images/social/twitter.png"></img></a>
+	</div>
+	
+	</footer>
+	
+</body>
+
+</html>

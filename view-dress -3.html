@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/view.css">
+
+</head>
+
+<body> 
+
+
+	<header>	
+		<a class="logo-wed" href="#"><img alt="The Fashion Store" src="images/main/logo7.jpg" style="width:400px;"></a> 
+		<nav class="t-nav">
+		<div class="navbar">
+		<ul class="menu-bar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="planning.html">Stock</a></li>
+			<li><a href="testimonials.html">Testimonials</a></li>
+		    <li><a href="product-photo.html" class="on-top">Shop</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+  <li><a href="login.html">Login</a></li>
+  
+  
+		</ul>
+		</div> 
+		<a href="checkout-cart.html">
+		<img class="log-bag" src="images/main/bag.png"></a>
+		</nav>
+	</header>
+
+	<!--HEADER END-->
+	
+	<section id="main-sec">
+	<div class="o-container">
+	<p class="go-back"><a class="go-back-a" href="product-photo.html"><< Back to the Shop </a> </p>
+	<div class="show-case-main">
+
+	<img id="show-case" src="images/product-dress-3/1/1.jpg"></img> 
+	</div>
+	
+	<div class="show-case-info">
+	
+		<div class="head-text">Microfiber Wool Scarf</div>
+		<div class="sub-text">Women Fashionwear</div>
+		<div class="product-price">$699.00</div>
+		<div class="product-colour">DRESS COLOUR: Dark Green</div> 
+		
+		<form action="/action_page.php">
+		
+		<div class="size-text">SIZE:</div>
+		<select id="size" name="size">
+		<option value="XS">XS</option>
+		<option value="S">S</option>
+		<option value="M">M</option>
+		<option value="L">L</option>
+		<option value="XL">XL</option>
+		<option value="XXL">XXL</option>
+		</select>
+		<br>
+		
+		<div class="quantity-text">QUANTITY:</div>
+		<input id="number" type="number" name="quantity" min="1" max="5">
+		<input type="submit" value="ADD TO CART">
+		
+		</form>
+		
+		<img id="show-case-1" src="images/product-dress-3/1/1.jpg" onclick="document.getElementById('show-case').src='images/product-dress-3/1/1.jpg'"></img> 
+		<img id="show-case-1" src="images/product-dress-3/1/1-1.jpg" onclick="document.getElementById('show-case').src='images/product-dress-3/1/1-1.jpg'"></img> 
+		<img id="show-case-1" src="images/product-dress-3/1/1-2.jpg" onclick="document.getElementById('show-case').src='images/product-dress-3/1/1-2.jpg'"></img> 
+
+	</div>
+
+	<button class="collapsible">Product Details</button>
+	<div class="content">
+	<p>
+	
+	<br>
+	- Fabric: Microfiber
+	<br>
+	- Length: Medium
+	<br>
+	- Silhouette: Sheath/Column
+	<br>
+	- Back Style: Illusion
+	<br>
+	- Neckline: V Neck
+	<br>
+	
+	&nbsp;
+	
+	</p>
+	</div>
+	
+	<br>
+	
+	<button class="collapsible">Description & Tips</button>
+	<div class="content">
+	<p>
+	
+	<br>
+		
+New without tags: A brand-new, unused, and unworn item (including handmade items) that is not in original packaging or may be missing original packaging materials (such as the original box or bag). The original tags may not be attached.<br>
+	
+	&nbsp;
+	
+	</p>
+	</div>
+	
+	<br>
+	
+	<button class="collapsible">Shipping & Returns</button>
+	<div class="content">
+	<p>
+	<br>
+	Shipping is an additional 1-10 business days depending on location. Ship time will be provided at checkout.
+	<br><br>
+	Free returns are available for standard sizes within 10 days. Custom sizes are final sale.<br>
+	&nbsp; 
+	
+	</p>
+	</div>
+	
+	</div>
+	</section>
+	
+	
+	<!--FOOTER START-->
+	
+	<footer class="f-con">
+
+	<div class="f-text">
+	
+	
+	
+	<p style="font-size: 14px;">Privacy Policy</p>
+	<p style="font-size: 11px;">Created By: SLIIT Group MAT_PG.01.02_04</p>
+	
+	</div>
+	
+	<div class="social">
+	<a style="padding-left:30px;" href="http://www.instagram.com" target="_blank"><img class="ig" src ="images/social/ig.png"></img></a>
+	<a style="padding-left:30px;" href="http://www.facebook.com" target="_blank"><img class="fb" src ="images/social/fb.png"></img></a>
+	<a style="padding-left:30px;" href="http://www.twitter.com" target="_blank"><img class="tw" src ="images/social/twitter.png"></img></a>
+	</div>
+	
+	</footer>
+	
+</body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</html>

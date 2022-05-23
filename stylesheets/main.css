@@ -1,0 +1,134 @@
+*{
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box
+}
+
+html, body{
+	height: 100%;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
+	line-height: 1.6
+}
+
+body{
+	background-color:#e5e5e5;
+	margin:0
+}
+
+article,footer,header,main,nav{
+    display:block
+}
+
+@font-face {
+    font-family: couture;
+    src: url(fonts/couture-bld.otf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/roboto.medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Reg;
+    src: url(fonts/roboto.regular.ttf);
+}
+
+
+/* HEADER & NAVIGATION BAR */
+
+header{
+	width: 100%; 
+	height: 80px; 
+	background-color:white;
+}
+
+.logo-wed{
+	margin: 1x 20px 1x 30px;
+	display: inline-block;
+}
+
+.log-bag{
+	position:absolute;
+	top:0px;
+	right:40px;
+	width: 45px;
+    margin-top: 17px;
+}
+
+.t-nav{
+	float: right; 
+	height:80px;
+}
+
+.menu-bar{
+	margin: 21px 85px 21px 0;
+	font-size: 14px;
+    font-size: .875rem;
+    letter-spacing: -.56px;
+    letter-spacing: -.035rem;
+    cursor: pointer;
+    font-weight: normal;
+    line-height: 1.35;
+    padding: 10px;
+    text-transform: uppercase
+}
+
+.menu-bar li{
+	display: inline; 
+	list-style: none;
+}
+.menu-bar a{
+	text-decoration:none;
+	padding: 10px 15px;
+	color: #92989b;
+}
+
+.menu-bar a:hover{
+	color:#8878c1;
+	/*color:#d6577a;*/
+}
+
+.menu-bar a.on-top{
+	color:#8878c1;
+	/*color:#d6577a;*/
+}
+
+/* FOOTER */
+
+.f-con{ 
+	background-color:#d1c7f6;
+	/*background-color:#9f9f9f;*/
+	position:relative;
+	bottom:0px;
+	left: 0px;
+	height:100px; 
+	width:100%;
+	clear:both 
+}
+
+.f-text{
+	float:left; 
+	margin:30px 0 0 40px;
+	color:#2c2e2f;
+}
+
+.social{
+	float:right;
+	margin:35px 40px 0 0; 
+}
+
+.ig{
+	height:32px;
+}
+
+.fb{
+	height:32px;
+}
+
+.tw{
+	height:32px;
+}
+
+
+
